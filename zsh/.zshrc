@@ -13,6 +13,17 @@ plugins=(git dirhistory)
 source $ZSH/oh-my-zsh.sh
 
 # -------------------------------------------------------------------
+# Directory Shortcuts
+# -------------------------------------------------------------------
+
+alias p='pwd'
+
+alias c='cd'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# -------------------------------------------------------------------
 # PROGRAM PATHS
 # -------------------------------------------------------------------
 
@@ -51,3 +62,4 @@ alias gd='git diff --color'
 alias gdc='git diff --cached'
 alias gstat='git diff --stat'
 alias log='git log --all --graph --decorate --oneline --abbrev-commit'
+alias gitk='gitx --all'
