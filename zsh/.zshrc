@@ -8,7 +8,7 @@ ZSH_THEME="ys"
 # PLUGINS
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git dirhistory)
+plugins=(git dirhistory osx)
 
 source $ZSH/oh-my-zsh.sh
 
