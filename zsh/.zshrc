@@ -8,9 +8,26 @@ ZSH_THEME="ys"
 # PLUGINS
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git dirhistory osx)
+plugins=(git dirhistory osx web-search jsontools sublime)
 
 source $ZSH/oh-my-zsh.sh
+
+# -------------------------------------------------------------------
+# Custom Functions 
+# -------------------------------------------------------------------
+
+#VS CODE
+
+function code {  
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        local argPath="$1"
+        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+        open -a "Visual Studio Code" "$argPath"
+    fi
+}
 
 # -------------------------------------------------------------------
 # Directory Shortcuts
@@ -18,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias p='pwd'
 
-alias c='cd'
+alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
