@@ -47,6 +47,14 @@ alias ....='cd ../../..'
 # Anaconda3
 export PATH="/Users/alex/anaconda/bin:$PATH"
 
+
+# -------------------------------------------------------------------
+# TMUX 
+# -------------------------------------------------------------------
+alias tm='tmux'
+alias tmk='tmux kill-session'
+alias tmks='tmux kill-server'
+
 # -------------------------------------------------------------------
 # Git
 # -------------------------------------------------------------------
@@ -80,3 +88,4 @@ alias gdc='git diff --cached'
 alias gstat='git diff --stat'
 alias log='git log --all --graph --decorate --oneline --abbrev-commit'
 alias gitk='gitx --all'
+
