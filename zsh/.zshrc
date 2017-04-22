@@ -86,6 +86,7 @@ alias log='git log --all --graph --decorate --oneline --abbrev-commit'
 alias gitk='gitx --all'
 alias gr='git remote'
 alias gra='git remote add'
+alias grv='git remote -v'
 alias grb='git rebase'
 alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
@@ -111,7 +112,7 @@ function ggg () {
   git push;
 }
 # Fetch from remote and rebase
-function gupate () {
+function gupdate () {
   git fetch origin master;
   git rebase origin/master;
 }
